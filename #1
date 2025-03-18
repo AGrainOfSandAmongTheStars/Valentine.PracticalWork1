@@ -1,0 +1,71 @@
+1)
+let name = "valentine"
+let city = name
+console.log(`${city}`);
+
+2)
+привіт 1
+привіт name
+привіт Olga
+
+3)
+let a = "5";
+let b = "13cvb";
+let c = "12.9sxdcfgv";
+a = Number(a);
+b = parseInt(b.match(/\d+/)[0]);
+c = parseFloat(c.match(/[\d.]+/)[0]);
+console.log(`a ${a} ${typeof a}`);
+console.log(`b ${b} ${typeof b}`);
+console.log(`b ${c} ${typeof c}`);
+
+4)
+let a = 0.1;
+let b = 0.2;
+let c = (10*a+10*b)/10;
+console.log(`${c}`);
+
+5)
+let a = [20, 10, 50, 40];
+let maxa = Math.max(...a);
+console.log(maxa);
+
+6)
+function getRandomInt(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+let randomInt = getRandomInt(2, 4);
+console.log(randomInt);
+
+7)
+const message = "Welcome to Bahamas!";
+console.log(message.length);
+
+8)
+const message = "Welcome to Bahamas!";
+console.log(message.toUpperCase());
+
+9)
+let object = {};
+object.name = "Кирило";
+object.age = 33;
+object.city = "Моріо";
+console.log(object);
+delete object.city;
+console.log(object);
+object.likeCats = true;
+console.log(object);
+
+10)
+let object = {};
+object.name = "Кирило";
+object.age = 33;
+object.city = "Моріо";
+delete object.city;
+object.likeCats = true;
+for (let key in object) {
+  console.log(key + ": " + object[key]);
+}
