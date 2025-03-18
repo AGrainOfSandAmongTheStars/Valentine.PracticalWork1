@@ -1,0 +1,89 @@
+1)
+let a = Number(prompt("Введіть 1 число: "));
+let b = Number(prompt("Введіть 2 число: "));
+let c = a+b;
+console.log("Результати:");
+console.log("Додавання: " + c);
+c = a-b;
+console.log("Віднімання: " + c);
+c = a*b;
+console.log("Множення: " + c);
+c = a/b;
+console.log("Ділення: " + c);
+c = a % b;
+console.log("Залишок від ділення: " + c);
+
+2)
+let a = Number(prompt("Введіть ваш вік: "));
+let b = a >= 18;
+console.log("Ви повнолітній: " + b);
+
+3)
+let abonement = prompt("У вас є абонемент? (true/false): ").toLowerCase() === 'true';
+let balance = Number(prompt("Скільки грошей на рахунку?: "));
+if (abonement || balance > 100) {
+    console.log("Доступ дозволено");
+} else {
+    console.log("Доступ заборонено");
+}
+
+4)
+let a = Number(prompt("Введіть число: "));
+let result = (a % 2 === 0) ? "парне" : "непарне";
+console.log("Число " + result);
+
+5)
+let balance = Number(prompt("Ваш початковий баланс: "));
+balance += 500;
+console.log("Поповнено на 500 грн");
+balance -= 200;
+console.log("Знято 200 грн");
+let bonus = balance*0.05;
+balance += bonus;
+console.log("Нараховано 5%: " + bonus + " грн");
+console.log("Підсумковий баланс: " + balance + " грн");
+
+6)
+let daynum = Number(prompt("Введіть число(1-7): "));
+let day;
+switch (daynum) {
+    case 1:
+        day = "понеділок";
+        break;
+    case 2:
+        day = "вівторок";
+        break;
+    case 3:
+        day = "середа";
+        break;
+    case 4:
+        day = "четвер";
+        break;
+    case 5:
+        day = "п'ятниця";
+        break;
+    case 6:
+        day = "субота";
+        break;
+    case 7:
+        day = "неділя";
+        break;
+    default:
+        day = "значення неправильне. 1-7!";
+}
+console.log("Це " + day);
+
+7)
+let a = Number(prompt("Введіть 1 число: "));
+let b = Number(prompt("Введіть 2 число: "));
+let c = a&b;
+console.log("Результати:");
+console.log(a + " & " + b + " = " + c);
+c = a|b;
+console.log(a + " | " + b + " = " + c);
+c = a^b;
+console.log(a + " ^ " + b + " = " + c);
+c = a<<1;
+console.log(a + " << 1 " + " = " + c);
+c = a>>1;
+console.log(a + " >> 1 " + " = " + c);
