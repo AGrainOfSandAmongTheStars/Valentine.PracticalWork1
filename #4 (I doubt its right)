@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <script>
+        function calculateRectangleArea(width, height) {
+            return width * height;
+        }
+        console.log(calculateRectangleArea(5, 10));
+    </script>
+    <script>
+          function isEven(number) {
+    return number % 2 === 0;
+      }
+      console.log(isEven(4)); // true
+      console.log(isEven(7)); // false
+    </script>
+    <script>
+        function greetUser(name) {
+    console.log(`Привіт, ${name}!`);
+    }
+    </script>
+    <script>
+        a=1
+        b=2
+        c=3
+        function sumArray(numbers) {
+        return numbers.reduce((sum, number) => sum + number, 0);
+        }
+        const nums = [1, 2, 3];
+        console.log(sumArray(nums));
+    </script>
+    <script>
+        function maxOfThree(a, b, c) {
+          return Math.max(a, b, c);
+        }
+        console.log(maxOfThree(a, b, c));
+    </script>
+</body>
+</html>
