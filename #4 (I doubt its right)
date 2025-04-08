@@ -2,38 +2,42 @@
 <html>
 <body>
     <script>
-        function calculateRectangleArea(width, height) {
+       function calculateRectangleArea(width, height) {
             return width * height;
         }
-        console.log(calculateRectangleArea(5, 10));
+        let a = Number(prompt("Введіть ширину: "));
+        let b = Number(prompt("Введіть висоту: "));
+        console.log(calculateRectangleArea(a, b));
     </script>
     <script>
-          function isEven(number) {
-    return number % 2 === 0;
-      }
-      console.log(isEven(4)); // true
-      console.log(isEven(7)); // false
+        function isEven(number) {
+            return number % 2 === 0;
+        }
+        let a = Number(prompt("Введіть число: "));
+        console.log(isEven(a));
     </script>
     <script>
         function greetUser(name) {
-    console.log(`Привіт, ${name}!`);
-    }
+            console.log(`Привіт, ${name}!`);
+        }
+        let a = prompt("Як вас звати? ");
+         greetUser(a);
     </script>
     <script>
-        a=1
-        b=2
-        c=3
         function sumArray(numbers) {
-        return numbers.reduce((sum, number) => sum + number, 0);
+            let sum = 0;
+            for (let i = 0; i < numbers.length; i++) {
+             sum += numbers[i];
+            }
+            return sum;
         }
-        const nums = [1, 2, 3];
-        console.log(sumArray(nums));
+        console.log(sumArray([1, 2, 3, 4]));
     </script>
     <script>
         function maxOfThree(a, b, c) {
-          return Math.max(a, b, c);
+            return Math.max(a, b, c);
         }
-        console.log(maxOfThree(a, b, c));
+        console.log(maxOfThree(5, 9, 16));
     </script>
 </body>
 </html>
